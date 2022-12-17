@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import Navbar1 from './Components/Navbar1';
 import Navbar from './Components/Navbar';
 import AllRoute from './Routes/AllRoute';
