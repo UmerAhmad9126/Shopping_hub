@@ -10,7 +10,7 @@ export default function Navbar() {
 
     return (
         <>
-            <Box bg={useColorModeValue('#0046be', '#0046be')} px={4} color="white">
+            <Box bg={useColorModeValue('#0046be', '#0046be')} px={4} color="white" position={"sticky"} top="0px">
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <IconButton
                         size={'md'}

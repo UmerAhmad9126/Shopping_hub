@@ -14,6 +14,7 @@ import {
     Stack,
     useColorModeValue,
     useDisclosure,
+    Text,
 } from '@chakra-ui/react';
 
 
@@ -51,22 +52,22 @@ export default function Navbar1() {
                     />
                     <HStack spacing={8} alignItems={'center'}>
                         <Menu>
-                            <MenuButton  color={"#fff"} background={"#0046be"} as={Button} rightIcon={<ChevronDownIcon />}>
+                            <MenuButton color={"#fff"} colorScheme={"#0046be"} as={Button} rightIcon={<ChevronDownIcon />}>
                                 Holiday Deals
                             </MenuButton>
                             <MenuList>
                                 <MenuDivider />
-                                <MenuItem>Holiday Deals Right Now</MenuItem>
+                                <MenuItem color={"#0046be"}>Holiday Deals Right Now</MenuItem>
                                 <MenuDivider />
-                                <MenuItem>Gift Ideas</MenuItem>
+                                <MenuItem color={"#0046be"}>Gift Ideas</MenuItem>
                                 <MenuDivider />
-                                <MenuItem>Gift Cards</MenuItem>
+                                <MenuItem color={"#0046be"}>Gift Cards</MenuItem>
                                 <MenuDivider />
-                                <MenuItem>Toy Guide 2022</MenuItem>
+                                <MenuItem color={"#0046be"}>Toy Guide 2022</MenuItem>
                                 <MenuDivider />
-                                <MenuItem>Explore Holiday Inspiration</MenuItem>
+                                <MenuItem color={"#0046be"}>Explore Holiday Inspiration</MenuItem>
                                 <MenuDivider />
-                                <MenuItem>Holiday FAQs</MenuItem>
+                                <MenuItem color={"#0046be"}>Holiday FAQs</MenuItem>
                                 <MenuDivider />
                             </MenuList>
                         </Menu>
@@ -80,35 +81,51 @@ export default function Navbar1() {
                             ))}
                         </HStack>
                         <Menu>
-                            <MenuButton  color={"#fff"} background={"#0046be"} as={Button} rightIcon={<ChevronDownIcon />}>
+                            <MenuButton color={"#fff"} colorScheme={"#0046be"} as={Button} rightIcon={<ChevronDownIcon />}>
                                 More
                             </MenuButton>
                             <MenuList>
                                 <MenuDivider />
-                                <MenuItem>Totaltech MemberShip</MenuItem>
+                                <MenuItem color={"#0046be"}>Totaltech MemberShip</MenuItem>
                                 <MenuDivider />
-                                <MenuItem>Credit Cards</MenuItem>
+                                <MenuItem color={"#0046be"}>Credit Cards</MenuItem>
                                 <MenuDivider />
-                                <MenuItem>Gift Cards</MenuItem>
+                                <MenuItem color={"#0046be"}>Gift Cards</MenuItem>
                                 <MenuDivider />
-                                <MenuItem>Health & Wellness</MenuItem>
+                                <MenuItem color={"#0046be"}>Health & Wellness</MenuItem>
                                 <MenuDivider />
-                                <MenuItem>Best Buy Outlet</MenuItem>
+                                <MenuItem color={"#0046be"}>Best Buy Outlet</MenuItem>
                                 <MenuDivider />
-                                <MenuItem>Best Buy Business</MenuItem>
+                                <MenuItem color={"#0046be"}>Best Buy Business</MenuItem>
                                 <MenuDivider />
                             </MenuList>
                         </Menu>
 
                         <Menu>
-                            <MenuButton  color={"#fff"} background={"#0046be"} as={Button} rightIcon={<ChevronDownIcon />}>
+                            <MenuButton color={"#fff"} colorScheme={"#0046be"} as={Button} rightIcon={<ChevronDownIcon />}>
                                 Accounts
                             </MenuButton>
                             <MenuList>
                                 <MenuDivider />
-                                <MenuItem>Totaltech MemberShip</MenuItem>
+                                <Text width={"340px"}>Becoming a My Best Buy® member comes with
+                                    easy order tracking, rewards, offers and more.</Text>
                                 <MenuDivider />
-                                <MenuItem>Credit Cards</MenuItem>
+                                <Button w={"340px"} colorScheme={'blue'} variant={'solid'}>Sign In</Button>
+                                <MenuDivider />
+                                <Button variant={"outline"} w="340px" colorScheme={"#fff"} color="#0046be">Create Account</Button>
+                                <MenuDivider />
+                                <MenuItem color={"#0046be"}>Account</MenuItem>
+                                <MenuDivider />
+                                <MenuItem color={"#0046be"}>Order And Purchase</MenuItem>
+                                <MenuDivider />
+                                <MenuItem color={"#0046be"}>Your Products</MenuItem>
+                                <MenuDivider />
+                                <MenuDivider />
+                                <MenuItem color={"#0046be"}>Payment Method</MenuItem>
+                                <MenuDivider />
+                                <MenuItem color={"#0046be"}>Protection Plans & Subscriptions</MenuItem>
+                                <MenuDivider />
+                                <MenuItem color={"#0046be"}>Digital Library</MenuItem>
                             </MenuList>
                         </Menu>
                     </HStack>
