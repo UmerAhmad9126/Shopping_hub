@@ -11,12 +11,15 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^7.9.1",
+    "json": "^11.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
+    "react-simply-carousel": "^8.4.1",
     "react-slick": "^0.29.0",
+    "server": "^1.0.38",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

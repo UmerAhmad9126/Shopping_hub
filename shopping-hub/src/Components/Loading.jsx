@@ -1,8 +1,15 @@
+import { Skeleton, Stack } from '@chakra-ui/react'
 import React from 'react'
 
 const Loading = () => {
   return (
-    <div>Loading</div>
+    <div>
+      <Stack>
+        <Skeleton height='100px' />
+        <Skeleton height='100px' />
+        <Skeleton height='100px' />
+      </Stack>
+    </div>
   )
 }
 
