@@ -1,5 +1,7 @@
 import { Button, Drawer, Text, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, useDisclosure, Divider } from "@chakra-ui/react"
 import React from "react"
+import { Link as RouterLink } from "react-router-dom"
+
 export default function DrawerComponent() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
@@ -21,13 +23,19 @@ export default function DrawerComponent() {
                     <DrawerHeader>Shop By Department</DrawerHeader>
                     <DrawerBody>
                         <Divider />
-                        <Text padding="10px" color="#0046be">Laptop & Computers</Text>
+                        <RouterLink to="/laptopandcomputer">
+                            <Text onClick={onClose} padding="10px" color="#0046be">Laptop & Computers</Text>
+                        </RouterLink>
                         <Divider />
-                        <Text padding="10px" color="#0046be">Tvs & Projector</Text>
+                        <RouterLink to="/tvsandprojector">
+                            <Text onClick={onClose} padding="10px" color="#0046be">Tvs & Projector</Text>
+                        </RouterLink>
                         <Divider />
                         <Text padding="10px" color="#0046be">Apple</Text>
                         <Divider />
-                        <Text padding="10px" color="#0046be">Videos Games, Consoles & VR</Text>
+                        <RouterLink to="/videogame">
+                            <Text onClick={onClose} padding="10px" color="#0046be">Videos Games, Consoles & VR</Text>
+                        </RouterLink>
                         <Divider />
                         <Text padding="10px" color="#0046be">Headphones</Text>
                         <Divider />

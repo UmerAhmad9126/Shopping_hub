@@ -4,13 +4,40 @@ import SearchBox, { ResSearchBox } from './SearchBox';
 import DrawerComponent from './DrawerComponent';
 import { BsCartCheck } from 'react-icons/bs';
 import { Link as RouterLink } from 'react-router-dom';
+import "../App.css"
+import { useContext,  } from 'react';
+import { CartContext } from '../Contexts/CartContextProvider';
 
 export default function Navbar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
+    const { cartState } = useContext(CartContext);
+    // const [data, setData] = useState([]);
+
+
+    // useEffect(() => {
+    //     getData();
+    // }, [])
+
+
+
+    // const getData = async () => {
+    //     try {
+
+    //         let res = await fetch(`http://localhost:3000/cart-server`);
+    //         let data = await res.json();
+    //         // console.log('data:', data);
+    //         setData(data);
+
+    //     } catch (error) {
+    //         console.log('error:', error)
+    //     }
+    // };
+
+    // console.log('data:', data.length)
 
     return (
         <>
-            <Box bg={useColorModeValue('#0046be', '#0046be')} px={4} color="white" position={"sticky"} top="0px">
+            <Box className='navbar' bg={useColorModeValue('#0046be', '#0046be')} px={4} color="white" position={"sticky"} top="0px">
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <IconButton
                         size={'md'}
@@ -37,8 +64,13 @@ export default function Navbar() {
 
                     <Flex alignItems={'center'}>
                         <Text marginRight={"50px"} fontWeight="600" fontSize="20px">Aiea</Text>
-                        <BsCartCheck size={"30px"} />
-                        <Text fontWeight="600" fontSize="20px" marginRight={"50px"} >Cart</Text>
+                        <RouterLink to="/cart">
+                            <BsCartCheck size={"30px"} />
+                        </RouterLink>
+                        <Text textAlign={"center"} fontSize={"11px"} height="18px" w="18px" borderRadius={"50%"} border={"1px solid yellow"} bg="yellow" color={"black"} marginBottom={"40px"}>{cartState}</Text>
+                        <RouterLink to="/cart">
+                            <Text fontWeight="600" fontSize="20px" marginRight={"50px"} >Cart</Text>
+                        </RouterLink>
 
                     </Flex>
                 </Flex>

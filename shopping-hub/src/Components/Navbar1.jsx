@@ -16,6 +16,7 @@ import {
     useDisclosure,
     Text,
 } from '@chakra-ui/react';
+import { Link as RouterLink } from 'react-router-dom';
 
 
 const Links = ['Top Deals', 'Deals of the Day', 'Total Tech Membership', 'Credit Cards', 'Recently viewed', 'Saved items'];
@@ -102,7 +103,7 @@ export default function Navbar1() {
                         </Menu>
 
                         <Menu>
-                            <MenuButton color={"#fff"} colorScheme={"#0046be"} as={Button} rightIcon={<ChevronDownIcon />}>
+                            <MenuButton  color={"#fff"} colorScheme={"#0046be"} as={Button} rightIcon={<ChevronDownIcon />}>
                                 Accounts
                             </MenuButton>
                             <MenuList>
@@ -110,7 +111,9 @@ export default function Navbar1() {
                                 <Text width={"340px"}>Becoming a My Best Buy® member comes with
                                     easy order tracking, rewards, offers and more.</Text>
                                 <MenuDivider />
-                                <Button w={"340px"} colorScheme={'blue'} variant={'solid'}>Sign In</Button>
+                                <RouterLink to="/login">
+                                    <Button onClick={onClose} w={"340px"} colorScheme={'blue'} variant={'solid'}>Sign In</Button>
+                                </RouterLink>
                                 <MenuDivider />
                                 <Button variant={"outline"} w="340px" colorScheme={"#fff"} color="#0046be">Create Account</Button>
                                 <MenuDivider />

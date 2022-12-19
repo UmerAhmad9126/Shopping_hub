@@ -1,0 +1,35 @@
+.carousel{
+    width: 300px;
+    height: 350px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+
+.carousel img {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+}
+
+.carousel P {
+    color: #0457c8;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.carousel h3 {
+    
+    color: #0457c8;
+    text-align: center;
+    padding: 8px;
+}
+
+.carousel h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0457c8;
+    text-align: center;
+    padding: 8px;
+    text-decoration: line-through;
+}
