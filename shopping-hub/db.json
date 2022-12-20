@@ -917,22 +917,5 @@
       "Price": "9.99"
     }
   ],
-  "cart-server": [
-    {
-      "id": 1,
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6352/6352703_sd.jpg;maxHeight=200;maxWidth=300",
-      "title": "Microsoft - Elite Series 2 Wireless Controller for Xbox One, Xbox Series X, and Xbox Series S - Black",
-      "rating": "4.3",
-      "reviews": "(6,939)",
-      "Price": "154.99"
-    },
-    {
-      "id": 3,
-      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6369/6369453_rd.jpg;maxHeight=200;maxWidth=300",
-      "title": "Astro Gaming - A10 Wired Stereo Over-the-Ear Gaming Headset for PS4 & PS5 with Flip-to-Mute Mic - White/Blue",
-      "rating": "4.5",
-      "reviews": "(2,186)",
-      "Price": "19.99"
-    }
-  ]
+  "cart-server": []
 }
