@@ -16,7 +16,9 @@ import {
     useDisclosure,
     Text,
 } from '@chakra-ui/react';
+import { useContext } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
+import { AuthContext } from '../Contexts/AuthContextProvider';
 
 
 const Links = ['Top Deals', 'Deals of the Day', 'Total Tech Membership', 'Credit Cards', 'Recently viewed', 'Saved items'];
@@ -37,6 +39,7 @@ const NavLink = ({ children }) => (
 
 export default function Navbar1() {
     const { isOpen, onOpen, onClose } = useDisclosure();
+    const { logoutUser, authState } = useContext(AuthContext);
 
     return (
         <>
@@ -103,7 +106,7 @@ export default function Navbar1() {
                         </Menu>
 
                         <Menu>
-                            <MenuButton  color={"#fff"} colorScheme={"#0046be"} as={Button} rightIcon={<ChevronDownIcon />}>
+                            <MenuButton color={"#fff"} colorScheme={"#0046be"} as={Button} rightIcon={<ChevronDownIcon />}>
                                 Accounts
                             </MenuButton>
                             <MenuList>
@@ -112,10 +115,12 @@ export default function Navbar1() {
                                     easy order tracking, rewards, offers and more.</Text>
                                 <MenuDivider />
                                 <RouterLink to="/login">
-                                    <Button onClick={onClose} w={"340px"} colorScheme={'blue'} variant={'solid'}>Sign In</Button>
+                                    <Button disabled={authState.isAuth} onClick={onClose} w={"340px"} colorScheme={'blue'} variant={'solid'}>Sign In</Button>
                                 </RouterLink>
                                 <MenuDivider />
-                                <Button variant={"outline"} w="340px" colorScheme={"#fff"} color="#0046be">Create Account</Button>
+                                <RouterLink to="/login">
+                                    <Button disabled={!authState.isAuth} onClick={() => logoutUser()} variant={"outline"} w="340px" colorScheme={"#fff"} color="#0046be">Logout</Button>
+                                </RouterLink>
                                 <MenuDivider />
                                 <MenuItem color={"#0046be"}>Account</MenuItem>
                                 <MenuDivider />
