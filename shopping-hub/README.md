@@ -1,70 +1,83 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Bestbuy.com-Clone
+## [Deployed URL](https://shopping-hub.vercel.app/)
+## Bestbuy.com
 
-## Available Scripts
+ Best Buy's purpose is to enrich lives through technology. Best Buy do that by leveraging our unique combination of tech expertise and human touch to meet our customers’ everyday needs.
+---
 
-In the project directory, you can run:
+## Technologies used
 
-### `npm start`
+<hr>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Html
+- CSS
+- Javascript
+- Chakra UI
+- React Icons
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Installing and Running
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<hr>
 
-### `npm run build`
+To run this application on your local system
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Clone the Repository
+- Install npm packages
+- Run the Json-Server with (json-server --watch db.json) command
+- Run the application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
+- Landing, Products,Carousel.
+- Responsive Web Design and Cart Page.
+- There is login and logout functionality.
+- Elegant navbar for easy navigation between pages and categories.
+- Cart with Crud Operations.
+- Footer for navigating to different social Media Pages.
 
-### `npm run eject`
+## Steps to navigate the website:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<hr>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- On opening the application the user is taken to the landing Page which have a Navbar to navigate to different Section of the application.
+- On the Landing Page Navbar, user can click on Menu in Navbar, it will open a drawer to navigate to categories where all the categories of the products available are displayed.
+- There are three categories available Laptops & Computers/Tvs & Projectors/Video Games,Consoles & VR.
+- Product Pages containing all the Products available with options add the product into a cart.
+- Cart Page with of add/delete the product.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
+## Home Page
+![landing](https://user-images.githubusercontent.com/112754729/223841332-d924d755-67bd-4d2f-89f6-e2f905ce1ea4.jpg)
+ 
+## Navbar
+![Navbar](https://user-images.githubusercontent.com/112754729/223841453-fd52c260-78f8-4c9c-a495-fd4c4cbba2ad.jpg)
 
-## Learn More
+## Categories
+![categories](https://user-images.githubusercontent.com/112754729/223841529-0d14dc0d-ba3f-4d9a-a2d6-452781955dd4.jpg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Product Page
+![product](https://user-images.githubusercontent.com/112754729/223841599-bd50ea78-04fe-4fb8-8edd-88ebd114bded.jpg)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Product Details
+![product details](https://user-images.githubusercontent.com/112754729/223841657-14f7a7e1-e7fb-4201-a064-d2c14cff1b58.jpg)
 
-### Code Splitting
+## Cart Page
+![bag](https://user-images.githubusercontent.com/112754729/223841799-14e36e14-4d99-4c41-abf6-620b33007599.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Address Page
+![address](https://user-images.githubusercontent.com/112754729/223841842-908a1cd5-3218-432a-ba88-70b578826918.jpg)
 
-### Analyzing the Bundle Size
+## Payment Page
+![payment](https://user-images.githubusercontent.com/112754729/223841935-df024c6b-e666-4f06-8c07-e572e3453611.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Order Confirmation Page
+![orderconfirm](https://user-images.githubusercontent.com/112754729/223842007-31bf94b8-8bb9-4383-a749-f98112154a3e.jpg)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
